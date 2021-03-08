@@ -2,9 +2,6 @@
 build/*
 *.DS_Store
 # Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
 *.zip
 bucket-name.txt
 !bin/*.sh

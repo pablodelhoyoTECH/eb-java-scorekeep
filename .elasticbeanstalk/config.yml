@@ -1,0 +1,19 @@
+branch-defaults:
+  master:
+    environment: testPablo-dev
+environment-defaults:
+  testPablo-dev:
+    branch: null
+    repository: null
+global:
+  application_name: testPablo
+  default_ec2_keyname: eb-key-pablo
+  default_platform: Java 8 running on 64bit Amazon Linux
+  default_region: eu-west-3
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: git
+  workspace_type: Application
