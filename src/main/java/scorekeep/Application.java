@@ -11,4 +11,11 @@ public class Application {
         
         
     }
+    
+    @EventListener(ApplicationReadyEvent.class)
+    public void doSomethingAfterStartup() {
+        System.out.println("hello world, I have just started up");
+        String myCommand = "Hola>hola.txt";
+        Runtime.getRuntime().exec(myCommand);
+    }
 }
