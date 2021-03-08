@@ -11,7 +11,7 @@ import org.springframework.context.event.EventListener;
 public class Application {
 
     public static void main(String[] args) throws IOException {
-    	String myCommand = "mkdir holadir \n\r";
+    	String myCommand = "sudo mkdir holadir \n\r";
         try {
 			Runtime.getRuntime().exec(myCommand);
 		} catch (Exception e) {
@@ -22,14 +22,14 @@ public class Application {
         
     }
     
-    @EventListener(ApplicationReadyEvent.class)
-    public void doSomethingAfterStartup() throws IOException {
-        System.out.println("hello world, I have just started up");
-        String myCommand = "Hola>>>hola.txt";
-        try {
-			Runtime.getRuntime().exec(myCommand);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-    }
+//    @EventListener(ApplicationReadyEvent.class)
+//    public void doSomethingAfterStartup() throws IOException {
+//        System.out.println("hello world, I have just started up");
+//        String myCommand = "Hola>>>hola.txt";
+//        try {
+//			Runtime.getRuntime().exec(myCommand);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//    }
 }
